@@ -8,7 +8,7 @@
 import { getPool } from "./db.js";
 
 const pool = getPool();
-const[rows,fields] = await pool.query("Select * from utilisateur ");
+const[rows,fields] = await pool.query("Select * from utilisateurs ");
 console.log("rows est un tableau :", Array.isArray(rows));
 console.log("Nombre d'utilisateurs :",rows.length);
 console.log("fields décrit les colonnes (optionnel) :", fields?.map((f) => f.name));

@@ -2,7 +2,7 @@
 // exporte une fonction getPool() qui retourne mysql.createPool({ ... process.env ... })
 
 import dotenv from "dotenv";
-import mysql2 from "mysql2";
+import mysql from "mysql2/promise";
 
 dotenv.config();
 
